@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --color-greyish-blue: #2C3E50;
+    --color-light-green: #1ABC9C;
+    --color-white: #ffffff;
+}
+
+.nav-container{
+    background-color: var(--color-greyish-blue);
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+}
+
+.nav-main{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-main a{
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-brand{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.menu-items{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-items li{
+    margin: 10px;
+    font-size: 14px;
+}
+
+.profile-container{
+    background-color: var(--color-light-green);
+    color: var(--color-white);
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-avatar img{
+    width: 12rem;
+}
+
+.profile-title{
+    margin-top: 35px;
+    font-size: 2rem;
+}
+
+.profile-description{
+    font-size: 1rem;
+}
+
+#portfolio{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.portfolio-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-greyish-blue);
+}
+
+.portfolio-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item{
+    width: calc(100% - 40px);
+    max-width: 420px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+}
